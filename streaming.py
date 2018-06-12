@@ -67,8 +67,8 @@ class DBWriterListener(StreamListener):
 
 
 def run():
-    # listener = StdOutListener()
-    listener = DBWriterListener()
+    listener = StdOutListener()
+    # listener = DBWriterListener()
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
 
